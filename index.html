@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>斎藤製薬 -saitou Pharmaceutical-</title>
+    <!--ファビコン -->
+    <link href="img/favicons.png" rel="shortcut icon type="favicon.ico">
+    <!-- リセットCSS -->
+    <link href=" https://unpkg.com/sanitize.css " rel=" stylesheet " />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <!-- 小塚ゴシックPro -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "eef3xuy",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <!-- JQ読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header id="main-img">
+      <div class="head-wap" id="nav top">
+        <div class="head-logo">
+          <img src="./img/logo.png" alt="ロゴ" />
+        </div>
+
+        <nav>
+          <ul class="head-list">
+            <li><a class="a-nav" href="#">HOME</a></li>
+            <li><a class="a-nav" href="#overview">企業情報</a></li>
+            <li><a class="a-nav" href="#product">製品について</a></li>
+            <li><a class="a-nav" href="#adop">採用情報</a></li>
+            <li><a class="inquiry" href="./contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <!-- ここからハンバーガーメニュー -->
+        <div class="burger"></div>
+          <div class="menu">
+            <ul class="click-head">
+              <li><a class="menus" href="#">HOME</a></li>
+              <li><a class="menus" href="#overview">企業情報</a></li>
+              <li><a class="menus" href="#product">製品について</a></li>
+              <li><a class="menus" href="#adop">採用情報</a></li>
+              <li><a class="menus" href="./contact.html">お問い合わせ</a></li>
+            </ul>
+          </div>
+        
+        <!-- ここまでハンバーガーメニュー -->
+      </div>
+      <h2 class="main-text container">
+        皆様の健康に寄り添う医薬品
+        <img src="./img/undraw_medical_care_movn.svg" alt="" />
+        <!-- <img src="./img/undraw_medicine_b-1-ol.svg" alt=""> -->
+      </h2>
+      </div> 
+    </header>
+
+    <!-- 企業情報 -->
+    <div class="container">
+      <h2>企業情報</h2>
+      <div class="corporate-info" id="info">
+        <div class="infos" id="overview">
+          <a href="#"
+            ><h3><span></span>会社概要</h3></a
+          >
+        </div>
+
+        <div class="infos" id="product">
+          <a href="#"
+            ><h3><span></span>製品一覧</h3></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- 代表挨拶 -->
+    <div class="container">
+      <h2>代表挨拶</h2>
+      <span class="decoration1"></span>
+      <div class="greeting">
+        <div class="greeting-text">
+          <p>
+            斎藤製薬は、患者さんに喜ばれ、安心してご使用いただける医
+            薬品、医療関係者に信頼される医薬品を提供し続けること。
+            それこそが、斎藤製薬の使命と考えます。お薬代
+            の安価なジェネリック医薬品は、患者さん、健康
+            保険組合、国や地方の医療費節減にもつながりま
+            す。だからこそ私たちは、高品質なジェネリック
+            医薬品を真心をこめてお届けすることで、人々の
+            健やかな暮らしを実現し、社会に貢献できるものと信じています。
+          </p>
+        </div>
+        <span class="decoration2"></span>
+        <div class="representative-img">
+          <img src="./img/cp-07.jpg" alt="代表写真" />
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWS -->
+    <div class="news">
+      <h2 class="container">NEWS</h2>
+      <ul class="news-container">
+        <li>
+          <span>2022.09.14</span
+          >&emsp;&emsp;&emsp;サツマイモを使ったスイートポテト風の味わい「sait0umaimo」新発売
+        </li>
+        <li>
+          <span>2022.09.15</span>
+          &emsp;&emsp;&emsp;2ヵ月持続性注射剤統合失調症と双極Ⅰ型障害の適応で米国FDAが申請受理
+        </li>
+        <li>
+          <span>2022.09.19</span>
+          &emsp;&emsp;&emsp;抗精神病薬国内フェーズ3試験で主要評価項目を達成
+        </li>
+        <li>
+          <span>2022.09.20</span>&emsp;&emsp;&emsp;
+          サツマイモを使ったスイートポテト風の味わい「sait0umaimo」新発売
+        </li>
+        <li>
+          <span>2022.09.27</span>&emsp;&emsp;&emsp;
+          2ヵ月持続性注射剤統合失調症と双極Ⅰ型障害の適応で米国FDAが申請受理
+        </li>
+        <li>
+          <span>2022.09.29</span>
+          &emsp;&emsp;&emsp;抗精神病薬国内フェーズ3試験で主要評価項目を達成
+        </li>
+      </ul>
+    </div>
+
+    <!-- 採用情報 -->
+    <div class="container">
+      <h2 id="adop">採用情報</h2>
+      <div class="adoption">
+        <div class="adoption-right">
+          <p class="adoptions">
+            採用に関する詳しい情報は、以下リンクよりご確認ください。
+          </p>
+          <a class="adoptions btn" href="#">採用情報はこちら</a>
+        </div>
+        <div class="adoption-img">
+          <img src="./img/cp08.jpg" alt="従業員写真" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 問い合わせ -->
+
+    <div class="contact">
+      <div class="container">
+        <div class="contact-wap">
+          <h2 id="contacth2">CONTACT</h2>
+          <p>お問い合わせ</p>
+          <p class="tel">TEL　0000-0000</p>
+        </div>
+        <a href="./contact.html">
+         <p class="mail">メールでのお問い合わせはこちら</p>
+        </a>
+      </div>
+    </div>
+    <!-- フッター -->
+    <footer class="foot-container">
+      <div class="foot-right">
+        <nav>
+          <ul class="foot-nav">
+            <li><a class="fot-nav" href="#">HOME</a></li>
+            <li><a class="fot-nav" href="#">企業情報</a></li>
+            <li><a class="fot-nav" href="#">製品について</a></li>
+            <li><a class="fot-nav" href="#">採用情報</a></li>
+            <li><a class="fot-nav" href="./contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <div class="foot-logo">
+          <a href="#">
+            <img src="./img/logo.png" alt="斎藤製薬" />
+          </a>
+        </div>
+      </div>
+      <div class="foot-left">
+        <p>個人情報保護方針（プライバシーポリシー</p>
+        <p>IR情報</p>
+      </div>
+    </footer>
+
+    <div class="copy">
+      <p>Copyright © Saitou Pharmaceuti Co., Ltd.</p>
+    </div>
+    <!-- JQファイル -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

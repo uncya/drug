@@ -1,0 +1,528 @@
+@charset "UTF-8";
+
+/*======================
+      全体
+======================= */
+
+html {
+  font-size: 10px;
+  /* 指定したフォントサイズに正しく表示されるよう*/
+  /* max-width: 1445px; */
+  margin: 0 auto;
+}
+
+body {
+  /* Kozuka Gothic Pro B */
+  font-family: kozuka-gothic-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 auto;
+  /* 行の高さ指定*/
+  line-height: 1.7;
+  color: #000107ee;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  /* 親以上にimgが大きくならないよう設定*/
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: rgb(47, 31, 31);
+}
+
+.container {
+  width: 1104px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.top-nav-icon {
+  display: none;
+}
+
+/*=====================================
+        ヘッダーからメインビジュアル
+=========================================*/
+
+/* ヘッダーからhreoimgまで */
+.main-text {
+  height: 600px;
+  margin-bottom: 300px;
+}
+
+#main-text img {
+  max-width: 1445px;
+  height: 701px;
+  /* background-image: url("./img/main.jpg"); */
+  /* background-image: url(./img/cp08.jpg); */
+  /* background-color: #234ce6;; */
+  background-size: cover;
+  background-position: center center;
+}
+
+.head-wap {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.head-logo img {
+  width: 354px;
+  height: auto;
+
+  margin: 10px 0 0 15px;
+}
+
+.head-list {
+  display: flex;
+  margin-top: 0;
+  width: 100%;
+  height: auto;
+}
+/* 問い合わせフォームのバーガーメニュー */
+.respon-menu {
+  width: 48px;
+  height: 48px;
+  margin: 20px 30px 0 0;
+  display: none;
+}
+
+.a-nav {
+  margin-right: 35px;
+  color: black;
+  /* hover設定 */
+  padding-bottom: 5px;
+  position: relative;
+}
+.a-nav::before {
+  background: #1227df;
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  /* 右でおわる */
+  transform-origin: right top;
+  /* 出現 */
+  transform: scale(0, 1);
+  /* 長さ */
+  transition: transform 0.3s;
+}
+.a-nav:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+  /* hover設定ここまで */
+}
+
+.a-nav,
+.inquiry {
+  line-height: 88px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.inquiry {
+  width: 180px;
+  height: 88px;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.3rem;
+  background-color: #234ce6;
+  color: #fff;
+}
+
+.main-text {
+  padding: 8%;
+  color: rgb(19, 2, 2);
+  text-shadow: 5px 5px 6px rgb(133, 143, 235);
+  font-size: 3rem;
+  text-align: center;
+  font-weight: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.top {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  opacity: 0.6;
+  z-index: 10;
+  bottom: 2;
+  right: 0;
+}
+
+.burger {
+  display: none;
+}
+/*======================
+      企業情報 
+=====================*/
+
+.corporate-info {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.infos {
+  width: 549px;
+  height: 353px;
+  /* margin:0 auto 130px auto ; */
+  box-shadow: 2px 2px #cfd8e1;
+}
+.infos h3:hover {
+  color: #234ce6;
+}
+
+.infos h3 {
+  font-size: 3rem;
+  color: rgb(24, 24, 24);
+  text-align: center;
+  background-color: rgba(124, 118, 118, 0.2);
+  margin-top: 140px;
+  padding: 16px;
+}
+
+#overview {
+  background-image: url("./img/cp05.jpg");
+  background-size: cover;
+  background-position: center;
+  /* margin-right: 65px; */
+}
+#product {
+  background-image: url("./img/cp06.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/*====================
+     代表挨拶 
+=====================*/
+
+.greeting {
+  display: flex;
+  margin-bottom: 130px;
+  position: relative;
+}
+.greeting-text {
+  width: 800px;
+  height: 500px;
+  font-size: 2.4rem;
+  line-height: 2em;
+  letter-spacing: 4px;
+  text-align: left;
+  color: #40425b;
+  z-index: 10;
+  padding: 20px;
+}
+.decoration1 {
+  display: block;
+  width: 280px;
+  height: 280px;
+  background-color: rgb(21, 60, 232, 0.3);
+  opacity: 0.5;
+  position: absolute;
+  z-index: 0;
+}
+.decoration2 {
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  background-color: rgb(40, 218, 238);
+  opacity: 0.5;
+  position: absolute;
+  top: 80px;
+  left: 170px;
+  z-index: 1;
+}
+.representative-img {
+  /* width: 549px;
+    height: 353px; */
+  /* margin: 30px auto 0 120px; */
+  margin: 0 auto;
+  z-index: 4;
+}
+
+.representative-img img {
+  /* width: 530px;
+    height: 400px;  */
+  margin-top: 100px;
+}
+
+/* .representative-img img:hover {
+  border-radius: 50%;
+  box-shadow: 0px 0px 16px -6px rgba(33, 21, 202, 0.4);
+} */
+
+/* ====================-
+        ニュース
+ ====================----*/
+.news {
+  height: auto;
+  padding: 0px;
+  background-image: url("./img/cp04.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 130px;
+}
+.news h2 {
+  padding: 20px 0;
+  font-size: 3.5rem;
+  font-weight: bold;
+  /* letter-spacing: 15px; */
+}
+
+.news-container {
+  width: 1104px;
+  margin: 0 auto;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  padding: 40px 0;
+}
+.news-container li {
+  padding: 10px 0;
+}
+
+/*==============
+     採用情報 
+================*/
+
+.adoption {
+  display: flex;
+  margin-bottom: 130px;
+}
+
+.adoption-right {
+  width: 413px;
+}
+
+.adoptions {
+  font-size: 2.4rem;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.btn {
+  width: 423px;
+  padding: 10px 10px;
+  background-color: #234ce6;
+  border: 1px solid blue;
+  color: #fff;
+  box-shadow: 0 4px 0 #1d16dc;
+  text-align: center;
+  padding: 15px;
+  margin-left: 60px;
+}
+.btn:hover {
+  font-weight: bold;
+  background-color: #234ce6;
+}
+.btn:active {
+  border: 2px solid #153ec7;
+  transform: translateY(-5px);
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+.adoption-img {
+  width: 653px;
+  height: 378px;
+  padding-left: 150px;
+}
+
+/*====================----
+     コンタクト
+====================------- */
+.contact {
+  width: 100%;
+  height: 400px;
+  background-color: #234ce6;
+  text-align: center;
+  color: #fff;
+}
+.contact-wap {
+  width: 380px;
+  height: auto;
+  margin: 0 auto;
+  font-size: 20px;
+}
+#contacth2 {
+  color: #fff;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.tel {
+  padding-bottom:20px;
+}
+
+.mail {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 20px 70px;
+  width: 423px;
+  padding: 10px 10px;
+  background-color: #234ce6;
+  border: 1px solid blue;
+  color: #fff;
+  box-shadow: 0 4px 0 #1d16dc;
+  font-size: 16px;
+}
+.mail:hover {
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: #234ce6;
+}
+.mail:active {
+  letter-spacing: 2px;
+  border: 2px solid #153ec7;
+  transform: translateY(-5px);
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+/*-============
+     フッター
+ ============== */
+
+footer {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.foot-nav {
+  display: flex;
+}
+
+.fot-nav {
+  color: #40425b;
+  padding: 0 20px;
+}
+
+.foot-logo {
+  margin-top: 40px;
+}
+
+.foot-left {
+  margin-top: 100px;
+}
+
+.copy {
+  width: 100%;
+  height: 82px;
+  background-color: rgb(168, 163, 163);
+  text-align: center;
+  display: block;
+
+}
+.copy p {
+  width: 100%;
+  line-height: 82px;
+  display: block;
+}
+
+/* アコーディオン */
+.menu {
+  display: none;
+}
+
+/*-========================================
+ コンタクトページ(html別)
+ =========================================*/
+
+#contact {
+  width: 1445px;
+  height: 88px;
+  background-image: url("./img/main.jpg");
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 100px;
+}
+
+.page-title {
+  text-align: center;
+  border-bottom: 2px solid #1227df;
+  margin-bottom: 50px;
+}
+
+/*-============
+ 問い合わせフォーム
+ ============ */
+
+#contact {
+  width: 100%;
+}
+.page-title {
+  margin-bottom: 50px;
+}
+form div {
+  margin-bottom: 14px;
+  padding: 0 20px;
+}
+label {
+  font-size: 16px;
+  margin: 10px 0;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgb(105, 118, 235);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  background: rgb(241, 239, 239);
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  max-width: 240px;
+}
+
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+  margin-bottom: 50px;
+}
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  padding: 20px 100px;
+  margin-bottom: 100px;
+  box-shadow: 0 4px 0 #1d16dc;
+  background-color: #234ce6;
+  border: 1px solid blue;
+  color: #fff;
+  font-size: 17px;
+}
+
+input[type="submit"]:hover {
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: #234ce6;
+}
+input[type="submit"]:active {
+  letter-spacing: 2px;
+  transform: translateY(5px);
+  transform: translateY(px);
+  box-shadow: none;
+}
